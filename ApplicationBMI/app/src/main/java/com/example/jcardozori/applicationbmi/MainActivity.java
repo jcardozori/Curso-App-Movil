@@ -5,15 +5,18 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private EditText editTextAltura;
     private EditText editTextPeso;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         editTextAltura = (EditText) findViewById(R.id.editTextAltura);
         editTextPeso = (EditText) findViewById(R.id.editTextPeso);
@@ -31,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
         {
             Log.d(TAG,"No son numeros");
         }
+        int height = Integer.parseInt(altura);
+        int weight = Integer.parseInt(peso);
 
+        ((TextView) findViewById(R.id.textResultado)).setText("resultado" + height * weight);
+        
 
     }
 }

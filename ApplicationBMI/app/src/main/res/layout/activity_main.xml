@@ -66,4 +66,12 @@
         android:layout_alignParentEnd="true"
         android:onClick="CalculaBMI"/>
 
+    <TextView
+        android:text="@string/textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textResultado"
+        android:textAppearance=""/>
+
+
 </LinearLayout>
