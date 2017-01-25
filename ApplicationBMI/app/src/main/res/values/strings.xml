@@ -2,4 +2,5 @@
     <string name="app_name">ApplicationBMI</string>
     <string name="title">BMI Application</string>
     <string name="digite_su_estatura_en_cm">Enter your height</string>
+    <string name="Descargar">Download</string>
 </resources>
